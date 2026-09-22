@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quran Gateway Online Academy</title>
+<meta name="description" content="Quran Gateway Online Academy — Online Quran classes for kids and adults with a 3-day free trial.">
+<style>
+:root{--navy:#06345b;--gold:#c89b3c;--cream:#fbf8f0;--ink:#17324d;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}.topbar{background:var(--navy);color:#fff;text-align:center;padding:7px 15px;font-size:14px}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #eadfca;box-shadow:0 3px 16px #0000000d}
+.nav{max-width:1180px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 18px;gap:20px}
+.logo{height:72px;width:auto;object-fit:contain}.links{display:flex;gap:25px;align-items:center;font-weight:700}.links a:hover{color:var(--gold)}
+.btn{display:inline-block;background:var(--gold);color:#fff;padding:13px 21px;border-radius:28px;font-weight:700;border:2px solid var(--gold);transition:.2s}.btn:hover{transform:translateY(-2px);filter:brightness(.96)}
+.btn.outline{background:#fff;color:var(--navy)}.menu{display:none;font-size:28px;background:none;border:0;color:var(--navy)}
+.hero{background:linear-gradient(90deg,#fffdf8 0%,#fffaf0 55%,#e9dfc9 100%);padding:78px 18px 65px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-160px;width:470px;height:470px;border:2px solid #d7b66b44;border-radius:50%}
+.hero-inner{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:45px;align-items:center}
+.kicker{color:var(--gold);font-weight:800;letter-spacing:3px;text-transform:uppercase}.hero h1{font-family:Georgia,serif;color:var(--navy);font-size:clamp(42px,6vw,72px);line-height:1.02;margin:12px 0}.hero h1 span{color:var(--gold);display:block;font-size:.7em;margin-top:10px}.hero p{font-size:18px;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero-art{min-height:360px;border-radius:28px;background:radial-gradient(circle at 50% 28%,#fff8df,#d9c89d 48%,#8b6b2c 130%);display:flex;align-items:center;justify-content:center;padding:30px;box-shadow:0 20px 45px #12304a22}.hero-art img{width:min(100%,360px);max-height:350px;object-fit:contain;background:#ffffffdd;border-radius:20px;padding:12px}
+.features{background:#fff;padding:25px 18px;border-bottom:1px solid #eadfca}.feature-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:repeat(6,1fr);gap:10px}.feature{text-align:center;padding:8px;border-right:1px solid #e9dec8}.feature:last-child{border:0}.icon{font-size:27px;color:var(--gold)}.feature b{display:block;color:var(--navy)}
+section{padding:75px 18px}.container{max-width:1180px;margin:auto}.section-title{text-align:center;font-family:Georgia,serif;color:var(--navy);font-size:40px;margin:0 0 12px}.lead{text-align:center;max-width:750px;margin:0 auto 38px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.card{background:#fff;border:1px solid #eadfca;border-radius:18px;padding:25px;box-shadow:0 8px 25px #17324d0b}.card h3{font-family:Georgia,serif;color:var(--navy);margin-top:0}.card .small{color:#667}
+.trial{background:linear-gradient(135deg,var(--navy),#0a517f);color:#fff;border-radius:28px;padding:48px;text-align:center}.trial h2{font-family:Georgia,serif;font-size:42px;margin:0 0 10px}.trial .btn{background:var(--gold);border-color:var(--gold);margin-top:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about-box{background:#fff;border-radius:20px;padding:30px;border:1px solid #eadfca}.about ul{padding-left:20px}
+.form-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-box{background:var(--navy);color:#fff;border-radius:22px;padding:30px}.contact-box h3{font-family:Georgia,serif;font-size:30px;margin-top:0}.contact-box a{color:#ffe2a2}.form{background:#fff;padding:30px;border-radius:22px;border:1px solid #eadfca}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}label{font-weight:700;font-size:14px}input,select,textarea{width:100%;margin-top:5px;padding:12px;border:1px solid #d9ccb2;border-radius:10px;font:inherit}textarea{min-height:100px}.full{grid-column:1/-1}.form button{cursor:pointer;margin-top:15px;width:100%}
+footer{background:#052945;color:#fff;padding:30px 18px}.footer-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:25px}.footer-grid h3{color:#f0c866}.social a{display:inline-block;margin-right:12px;color:#f0c866}
+@media(max-width:900px){.links{display:none}.menu{display:block}.hero-inner,.about,.form-wrap{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.hero{padding-top:45px}.hero h1{font-size:45px}.feature-grid,.cards,.form-grid,.footer-grid{grid-template-columns:1fr}.feature{border-right:0;border-bottom:1px solid #eee;padding:12px}.trial{padding:30px 20px}.trial h2{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="topbar">✨ 3 Days Free Trial • Online Quran Classes for Kids & Adults</div>
+<header>
+  <nav class="nav">
+    <a href="#home"><img class="logo" src="logo.png" alt="Quran Gateway Online Academy logo"></a>
+    <div class="links">
+      <a href="#home">Home</a><a href="#courses">Courses</a><a href="#about">About Us</a><a href="#trial">3-Day Free Trial</a><a href="#contact">Contact</a>
+    </div>
+    <a class="btn" href="https://wa.me/923046766331?text=Assalam-o-Alaikum%2C%20I%20want%20to%20book%20a%203-day%20free%20trial%20class." target="_blank">WhatsApp</a>
+    <button class="menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+<div class="hero-inner">
+<div>
+<div class="kicker">Learn Quran • Build a Better You</div>
+<h1>Quran Gateway <span>Online Academy</span></h1>
+<p><b>Authentic Quran Teaching • Qualified Tutors • Flexible Timing</b></p>
+<p>Learn Quran and Islamic education from the comfort of your home. Classes are available for children and adults, with flexible scheduling and a <b>3-day free trial</b>.</p>
+<div class="actions"><a class="btn" href="#trial">🎓 Start Your Journey</a><a class="btn outline" href="#courses">📖 Explore Courses</a></div>
+</div>
+<div class="hero-art"><img src="logo.png" alt="Quran Gateway logo"></div>
+</div>
+</section>
+
+<section class="features">
+<div class="feature-grid">
+<div class="feature"><div class="icon">👨‍👩‍👧</div><b>For Kids</b>All Ages</div>
+<div class="feature"><div class="icon">👤</div><b>For Adults</b>All Levels</div>
+<div class="feature"><div class="icon">⏱️</div><b>30 Minutes</b>Per Class</div>
+<div class="feature"><div class="icon">📅</div><b>Flexible Timing</b>Any Time</div>
+<div class="feature"><div class="icon">🏅</div><b>Qualified Teachers</b>Personal Guidance</div>
+<div class="feature"><div class="icon">🏠</div><b>100% Online</b>Learn from Home</div>
+</div>
+</section>
+
+<section id="courses">
+<div class="container">
+<h2 class="section-title">Our Courses</h2>
+<p class="lead">Structured online learning for beginners and advanced students. We can customize the learning path according to age and level.</p>
+<div class="cards">
+<div class="card"><h3>Noorani Qaida</h3><p class="small">For beginners — learn letters, pronunciation and Quran reading basics.</p></div>
+<div class="card"><h3>Quran Reading</h3><p class="small">Build fluency and accuracy with guided Quran reading.</p></div>
+<div class="card"><h3>Tajweed</h3><p class="small">Improve pronunciation and learn the essential rules of Tajweed.</p></div>
+<div class="card"><h3>Hifz & Islamic Studies</h3><p class="small">Memorization support and foundational Islamic learning.</p></div>
+</div>
+</div>
+</section>
+
+<section id="trial">
+<div class="container">
+<div class="trial">
+<h2>3 Days Free Trial</h2>
+<p>Experience our online classes before you commit. Available for kids and adults.</p>
+<a class="btn" href="#contact">Register for Free Trial</a>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about">
+<div>
+<div class="kicker">About the Academy</div>
+<h2 class="section-title" style="text-align:left">Learn from the comfort of your home</h2>
+<p>Quran Gateway Online Academy provides online Quran learning for children and adults. Our goal is to make Quran education accessible through convenient online classes and flexible timings.</p>
+<ul><li>Kids and adults welcome</li><li>30-minute online classes</li><li>Flexible class timing</li><li>3-day free trial</li></ul>
+</div>
+<div class="about-box"><h3>Director</h3><h2>Fayaz Hussain</h2><p>For admissions, trial classes and course information, contact us directly through WhatsApp, phone or email.</p><a class="btn" href="https://wa.me/923046766331" target="_blank">Chat on WhatsApp</a></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container form-wrap">
+<div class="contact-box">
+<h3>Contact Quran Gateway</h3>
+<p>📱 <b>WhatsApp / Phone</b><br><a href="tel:+923046766331">0304 676 6331</a></p>
+<p>✉️ <b>Email</b><br><a href="mailto:russa0786@gmail.com">russa0786@gmail.com</a></p>
+<p>📘 <b>Facebook</b><br><a href="https://www.facebook.com/MuftiFayyazHussain" target="_blank">MuftiFayyazHussain</a></p>
+<p>▶️ <b>YouTube</b><br><a href="https://www.youtube.com/@FayyazHussain-v5p" target="_blank">@FayyazHussain-v5p</a></p>
+</div>
+<form class="form" onsubmit="sendWhatsApp(event)">
+<h2 style="margin-top:0;color:var(--navy)">Book Your 3-Day Free Trial</h2>
+<div class="form-grid">
+<div><label>Student Name<input id="name" required></label></div>
+<div><label>Age<input id="age" type="number" min="3" max="100" required></label></div>
+<div><label>WhatsApp Number<input id="studentPhone" required></label></div>
+<div><label>Course<select id="course"><option>Noorani Qaida</option><option>Quran Reading</option><option>Tajweed</option><option>Hifz</option><option>Islamic Studies</option></select></label></div>
+<div class="full"><label>Preferred Time<input id="time" placeholder="e.g. 6:00 PM Pakistan Time"></label></div>
+<div class="full"><label>Message<textarea id="message" placeholder="Anything you'd like us to know?"></textarea></label></div>
+</div>
+<button class="btn" type="submit">📩 Send Free Trial Request on WhatsApp</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-grid">
+<div><h3>Quran Gateway Online Academy</h3><p>Learn Quran • Build a Better You</p></div>
+<div><h3>Contact</h3><p>0304 676 6331<br>russa0786@gmail.com</p></div>
+<div><h3>Social</h3><div class="social"><a href="https://www.facebook.com/MuftiFayyazHussain" target="_blank">Facebook</a><a href="https://www.youtube.com/@FayyazHussain-v5p" target="_blank">YouTube</a></div></div>
+<div><h3>Director</h3><p>Fayaz Hussain</p></div>
+</div>
+</footer>
+<script>
+function sendWhatsApp(e){
+ e.preventDefault();
+ const n=document.getElementById('name').value, a=document.getElementById('age').value;
+ const p=document.getElementById('studentPhone').value, c=document.getElementById('course').value;
+ const t=document.getElementById('time').value, m=document.getElementById('message').value;
+ const text=`Assalam-o-Alaikum. I want to book a 3-day free trial class at Quran Gateway Online Academy.%0A%0AStudent Name: ${encodeURIComponent(n)}%0AAge: ${encodeURIComponent(a)}%0AStudent WhatsApp: ${encodeURIComponent(p)}%0ACourse: ${encodeURIComponent(c)}%0APreferred Time: ${encodeURIComponent(t)}%0AMessage: ${encodeURIComponent(m)}`;
+ window.open(`https://wa.me/923046766331?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
